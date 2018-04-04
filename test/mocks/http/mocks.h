@@ -14,7 +14,8 @@
 #include "envoy/http/filter.h"
 #include "envoy/ssl/connection.h"
 
-#include "common/http/conn_manager_impl.h"
+// TODO(mattklein123): FIXFIX
+#include "common/http/conn_manager_config.h"
 
 #include "test/mocks/common.h"
 #include "test/mocks/event/mocks.h"
@@ -29,6 +30,7 @@
 namespace Envoy {
 namespace Http {
 
+// FIXFIX
 class MockConnectionManagerConfig : public ConnectionManagerConfig {
 public:
   MockConnectionManagerConfig();

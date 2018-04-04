@@ -22,24 +22,8 @@ envoy_cc_test(
         "//source/extensions/filters/network/ratelimit:config",
         "//source/extensions/filters/network/redis_proxy:config",
         "//source/extensions/filters/network/tcp_proxy:config",
-        "//source/server/config/network:http_connection_manager_lib",
+        #fixfix"//source/server/config/network:http_connection_manager_lib",
         "//test/mocks/grpc:grpc_mocks",
-        "//test/mocks/server:server_mocks",
-        "//test/test_common:utility_lib",
-    ],
-)
-
-envoy_cc_test(
-    name = "http_connection_manager_test",
-    srcs = ["http_connection_manager_test.cc"],
-    deps = [
-        "//source/common/buffer:buffer_lib",
-        "//source/common/config:filter_json_lib",
-        "//source/common/event:dispatcher_lib",
-        "//source/common/router:rds_lib",
-        "//source/extensions/filters/http/dynamo:config",
-        "//source/server/config/network:http_connection_manager_lib",
-        "//test/mocks/network:network_mocks",
         "//test/mocks/server:server_mocks",
         "//test/test_common:utility_lib",
     ],

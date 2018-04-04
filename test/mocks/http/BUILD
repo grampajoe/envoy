@@ -22,7 +22,7 @@ envoy_cc_mock(
         "//include/envoy/http:filter_interface",
         "//include/envoy/ssl:connection_interface",
         "//include/envoy/tracing:http_tracer_interface",
-        "//source/common/http:conn_manager_lib",
+        "//source/common/http:conn_manager_config_interface",
         "//test/mocks/event:event_mocks",
         "//test/mocks/request_info:request_info_mocks",
         "//test/mocks/router:router_mocks",
